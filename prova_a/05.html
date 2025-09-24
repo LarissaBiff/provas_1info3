@@ -6,4 +6,15 @@
     Peça para o usuário inserir o seu próprio nome.
     Valide se o nome inserido pelo usuário consta na lista, retornando para o usuário se ele está cadastrado ou não.
     */
+
+   const usuariosCadastrados = ['admin', 'julia', 'pedro', 'lucas'];
+   const seu_nome = prompt(`Insira seu nome:`).trim().toLowerCase();
+
+   for(let a of usuariosCadastrados){
+    if(a == seu_nome){
+        alert("Você está cadastrado.")
+    }else{
+        alert("Vocênão está cadastrado.")
+    }
+   }
 </script>
