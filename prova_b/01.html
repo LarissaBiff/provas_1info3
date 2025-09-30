@@ -9,5 +9,15 @@
 
    const numeros = [15, 8, 90, 75, 102, 6, 43];
    const adicione = Number(prompt(`Adicione um número à lista: ${numeros.join(", ")}`));
+
+    numeros.push(adicione);
+
+    let calcular = 0 ;
+    for(let o of numeros){
+        if(o%2==0){
+            calcular = calcular + o;
+        }
+    }
    
+   alert(`O total da soma dos números pares da lista é: ${calcular}.`)
 </script>
