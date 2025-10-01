@@ -5,4 +5,24 @@
     Depois, usando for...of, encontre qual é a quantidade de números ímpares presentes no Array.
     Apresente para o usuário a quantidade de números ímpares.
     */
+
+   const numeros = [33, 5, 88, 12, 91, 25];
+   const adicione = Number(prompt(`Insira um número à lista: ${numeros.join(", ")}`));
+
+   numeros.push(adicione);
+
+   let impares = 0;
+
+   for(let g of numeros){
+    if(g%2!==0){
+        impares ++;
+    }
+   }
+   if(impares>1){
+    alert(`Há ${impares} números impares na lista.`);
+   }else if(impares===1){
+    alert(`Há ${impares} número impar na lista.`);
+   }else{
+    alert(`Não há números impares na lista.`);
+   }
 </script>

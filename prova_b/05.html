@@ -6,4 +6,22 @@
     Usando for...of, crie um novo array contendo apenas as cidades da lista original que começam com a letra informada pelo usuário.
     Ao final, exiba o novo array com as cidades que atenderam a condição estabelecida.
     */
+    //Entrada
+
+   const cidades = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"];
+   let letra = prompt("Informe uma letra:").toUpperCase().trim();
+    
+   //Processamento
+
+    let comeca = []; 
+   for(let g of cidades){
+    let primeiraLetra = g.charAt(0);
+    if(letra===primeiraLetra){
+        comeca.push(g)
+    }
+   }
+
+   //Saída
+
+   alert(`${comeca.join(", ")}`)
 </script>

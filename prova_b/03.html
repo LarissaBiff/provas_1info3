@@ -10,11 +10,16 @@
     const carrinho = [50.00, 15.50, 120.00, 80];
     const desconto = prompt(`Informe o percentual de desconto que você gostaria de aplicar na lista: ${carrinho.join(", ")}`);
 
+    let conta;
     let total = 0;
     for(let s of carrinho){
-        if(s>60){
-            total = s
+        if(s > 60){
+            conta = s - (s*(desconto/100));
+        } else {
+            conta = s;
         }
-
+        total = total + s;
     }
+    alert(`O valor final da compra é de R$ ${total.toFixed(2)}`);
+
 </script>
